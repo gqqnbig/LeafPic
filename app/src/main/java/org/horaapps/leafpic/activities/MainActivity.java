@@ -112,9 +112,10 @@ public class MainActivity extends SharedMediaActivity implements
         pickMode = getIntent().getBooleanExtra(ARGS_PICK_MODE, false);
 
         if (savedInstanceState == null) {
-            fragmentMode = FragmentMode.MODE_ALBUMS;
+            fragmentMode = FragmentMode.MODE_MEDIA;
             initAlbumsFragment();
             setContentFragment();
+            displayMedia(Album.getAllMediaAlbum());
 
             return;
         }
