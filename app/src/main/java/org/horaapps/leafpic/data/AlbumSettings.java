@@ -20,7 +20,7 @@ public class AlbumSettings implements Serializable, Parcelable {
     FilterMode filterMode = FilterMode.ALL;
 
     public static AlbumSettings getDefaults() {
-        return new AlbumSettings(null, SortingMode.DATE.getValue(), 1, 0);
+        return new AlbumSettings(null, SortingMode.DATE.getValue(), 0, 0);
     }
 
     AlbumSettings(String cover, int sortingMode, int sortingOrder, int pinned) {
